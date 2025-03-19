@@ -14,41 +14,164 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Filme"
+                "$ref": "#/components/schemas/CreateFilmeDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Filme"
+                "$ref": "#/components/schemas/CreateFilmeDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Filme"
+                "$ref": "#/components/schemas/CreateFilmeDto"
               }
             }
           }
         },
         "responses": {
           "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Filme"
+        ],
+        "parameters": [
+          {
+            "name": "skip",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "take",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
             "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReadFilmeDto"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReadFilmeDto"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReadFilmeDto"
+                  }
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/Filme/{id}": {
+      "get": {
+        "tags": [
+          "Filme"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Filme"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFilmeDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFilmeDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFilmeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Filme"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
           }
         }
       }
@@ -56,7 +179,33 @@
   },
   "components": {
     "schemas": {
-      "Filme": {
+      "CreateFilmeDto": {
+        "required": [
+          "duracao",
+          "genero",
+          "titulo"
+        ],
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "genero": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "duracao": {
+            "maximum": 600,
+            "minimum": 70,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReadFilmeDto": {
         "type": "object",
         "properties": {
           "titulo": {
@@ -68,8 +217,38 @@
             "nullable": true
           },
           "duracao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horaDaConsulta": {
             "type": "string",
-            "nullable": true
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateFilmeDto": {
+        "required": [
+          "duracao",
+          "genero",
+          "titulo"
+        ],
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "genero": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "duracao": {
+            "maximum": 600,
+            "minimum": 70,
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
