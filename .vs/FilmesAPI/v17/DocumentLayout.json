@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|c:\\users\\eric\\documents\\apifilmes\\filmesapi\\filmesapi\\controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|solutionrelative:filmesapi\\controllers\\filmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|c:\\users\\eric\\documents\\apifilmes\\filmesapi\\filmesapi\\models\\cinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|solutionrelative:filmesapi\\models\\cinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|c:\\users\\eric\\documents\\apifilmes\\filmesapi\\filmesapi\\profiles\\filmeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|solutionrelative:filmesapi\\profiles\\filmeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|c:\\users\\eric\\documents\\apifilmes\\filmesapi\\filmesapi\\data\\dtos\\readfilmedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|solutionrelative:filmesapi\\data\\dtos\\readfilmedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|c:\\users\\eric\\documents\\apifilmes\\filmesapi\\filmesapi\\data\\filmecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|solutionrelative:filmesapi\\data\\filmecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|c:\\users\\eric\\documents\\apifilmes\\filmesapi\\filmesapi\\data\\dtos\\readcinemadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93987CA8-5A11-461E-9F51-6572E0CDD3D7}|FilmesAPI\\FilmesAPI.csproj|solutionrelative:filmesapi\\data\\dtos\\readcinemadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FilmeController.cs",
-              "DocumentMoniker": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Controllers\\FilmeController.cs",
-              "RelativeDocumentMoniker": "FilmesAPI\\Controllers\\FilmeController.cs",
-              "ToolTip": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Controllers\\FilmeController.cs",
-              "RelativeToolTip": "FilmesAPI\\Controllers\\FilmeController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowDEAAAAuAAAAAAAAAA==",
+              "Title": "Cinema.cs",
+              "DocumentMoniker": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Models\\Cinema.cs",
+              "RelativeDocumentMoniker": "FilmesAPI\\Models\\Cinema.cs",
+              "ToolTip": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Models\\Cinema.cs",
+              "RelativeToolTip": "FilmesAPI\\Models\\Cinema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T20:15:24.786Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-04-05T17:40:32.448Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FilmeProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Profiles\\FilmeProfile.cs",
-              "RelativeDocumentMoniker": "FilmesAPI\\Profiles\\FilmeProfile.cs",
-              "ToolTip": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Profiles\\FilmeProfile.cs",
-              "RelativeToolTip": "FilmesAPI\\Profiles\\FilmeProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Title": "ReadCinemaDto.cs",
+              "DocumentMoniker": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Data\\Dtos\\ReadCinemaDto.cs",
+              "RelativeDocumentMoniker": "FilmesAPI\\Data\\Dtos\\ReadCinemaDto.cs",
+              "ToolTip": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Data\\Dtos\\ReadCinemaDto.cs",
+              "RelativeToolTip": "FilmesAPI\\Data\\Dtos\\ReadCinemaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T01:27:42.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReadFilmeDto.cs",
-              "DocumentMoniker": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Data\\Dtos\\ReadFilmeDto.cs",
-              "RelativeDocumentMoniker": "FilmesAPI\\Data\\Dtos\\ReadFilmeDto.cs",
-              "ToolTip": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Data\\Dtos\\ReadFilmeDto.cs",
-              "RelativeToolTip": "FilmesAPI\\Data\\Dtos\\ReadFilmeDto.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T01:23:56.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FilmeContext.cs",
-              "DocumentMoniker": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Data\\FilmeContext.cs",
-              "RelativeDocumentMoniker": "FilmesAPI\\Data\\FilmeContext.cs",
-              "ToolTip": "C:\\Users\\Eric\\Documents\\APIFilmes\\FilmesAPI\\FilmesAPI\\Data\\FilmeContext.cs",
-              "RelativeToolTip": "FilmesAPI\\Data\\FilmeContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T01:21:03.537Z",
+              "WhenOpened": "2025-04-05T17:37:29.711Z",
               "EditorCaption": ""
             }
           ]
